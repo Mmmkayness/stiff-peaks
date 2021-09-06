@@ -64,7 +64,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-0.6),
           }}
         >
-          {post.created}
+          {post.metadata.authored}
         </p>
         <BackgroundImage
           Tag="div"
@@ -126,6 +126,7 @@ export const pageQuery = graphql`
       title
       created(formatString: "MMMM DD, YYYY")
       metadata {
+        authored(formatString: "MMMM DD, YYYY")
         hero {
           local {
             childImageSharp {

@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.created}</small>
+              <small>{node.metadata.authored}</small>
               <p
                 dangerouslySetInnerHTML={{ __html: node.metadata.description }}
               />
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
         node {
           metadata {
             description
+            authored(formatString: "DD MMMM, YYYY")
           }
           slug
           title
