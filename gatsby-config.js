@@ -7,7 +7,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-instagram-embed`,
+    `gatsby-plugin-instagram`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
