@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/jazibsawar/gatsby-blog-cosmicjs/issues"
   },
+  "resolutions": {
+    "mini-css-extract-plugin": "0.11.2"
+  },
   "dependencies": {
     "gatsby": "^3.13.0",
     "gatsby-background-image": "^1.5.3",
